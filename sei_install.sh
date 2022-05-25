@@ -1,4 +1,19 @@
-read -p "Enter MONIKER: " mon
+echo "               ===              "
+echo "       ==================       "
+echo "================================"
+echo "Welcome to scripts from Bitkate!"
+echo "================================"
+echo "       ==================       "
+echo "               ===              "
+
+echo ""
+echo "Installing SeiNetwork FullNode  "
+echo ""
+read -p "Enter MONIKER (node name): " mon
+
+echo ""
+echo "Please wait, installation begins..."
+sleep 3
 
 echo ""
 echo "=================="
@@ -10,6 +25,7 @@ apt update && apt upgrade -y
 echo ""
 echo "===================="
 echo "Installing GO 1.18.2"
+echo "===================="
 echo ""
 wget https://go.dev/dl/go1.18.2.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
